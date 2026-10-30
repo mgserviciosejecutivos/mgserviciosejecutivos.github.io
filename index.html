@@ -341,7 +341,7 @@ a.pw-card:hover .pw-frame{transform:translateY(-3px);box-shadow:0 26px 40px -22p
     var langs=[];try{langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']).map(function(l){return String(l).toLowerCase()})}catch(e){}
     var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
     var tzAR=/^America\/(Argentina\/|Buenos_Aires|Cordoba|Catamarca|Jujuy|Mendoza|Rosario)/.test(tz);
-    ar=langs.indexOf('es-ar')>-1||tzAR;
+    ar=tz?tzAR:(langs.indexOf('es-ar')>-1);
   }
   window.__loc=ar?'ar':'es';
   if(!ar)document.documentElement.className+=' i18n-wait';
