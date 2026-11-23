@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SQL Amoblamientos</title>
+<meta name="description" content="SQL Amoblamientos: más de 40 años diseñando, fabricando e instalando amoblamientos a medida. Cocinas, vestidores, baños y living.">
+<link rel="canonical" href="https://mgserviciosejecutivos.com/paginas/sql/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="SQL Amoblamientos">
+<meta property="og:description" content="SQL Amoblamientos: más de 40 años diseñando, fabricando e instalando amoblamientos a medida. Cocinas, vestidores, baños y living.">
+<meta property="og:url" content="https://mgserviciosejecutivos.com/paginas/sql/">
+<meta property="og:image" content="https://mgserviciosejecutivos.com/paginas/sql/og.jpg">
+<meta property="og:image:secure_url" content="https://mgserviciosejecutivos.com/paginas/sql/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vista previa del sitio web de SQL Amoblamientos">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SQL Amoblamientos">
+<meta name="twitter:description" content="SQL Amoblamientos: más de 40 años diseñando, fabricando e instalando amoblamientos a medida. Cocinas, vestidores, baños y living.">
+<meta name="twitter:image" content="https://mgserviciosejecutivos.com/paginas/sql/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#FAFAF8; --black:#0E0E0E; --walnut:#7A5A3E; --stone:#E7E3DC; --grey:#77736D; --line:#DAD6CF;
+  --display:"Archivo", "Helvetica Neue", Arial, sans-serif; --serif:"Instrument Serif", Georgia, serif; --body:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  /* layout: crisp Swiss grid, black wordmark energy, serif italics for warmth; ambient tabs as the main interaction */
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--black);font-family:var(--body);font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--walnut);outline-offset:3px}
+.wrap{max-width:1300px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.98;letter-spacing:-.035em;text-wrap:balance}
+h1 em,h2 em{font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:-.01em}
+section{scroll-margin-top:80px}
+.cap{font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--grey)}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;background:var(--black);color:var(--white);text-decoration:none;font-weight:500;border:0;cursor:pointer;font-family:var(--body);font-size:.92rem;transition:background .2s}
+.btn:hover{background:var(--walnut)}
+.btn.o{background:transparent;color:var(--black);box-shadow:inset 0 0 0 1px var(--black)}
+.btn.o:hover{background:var(--black);color:var(--white)}
+
+.nav{position:sticky;top:0;z-index:40;background:var(--white);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:76px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:34px;width:auto}
+.nav ul{display:flex;gap:32px;list-style:none;font-size:.9rem;font-weight:500}
+.nav ul a{text-decoration:none}.nav ul a:hover{color:var(--walnut)}
+.mt{display:none;background:none;border:0;font:inherit;font-weight:600;cursor:pointer;letter-spacing:.12em}
+
+.hero{padding:clamp(40px,5vw,70px) 0 0}
+.hero .top{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:end;margin-bottom:clamp(30px,4vw,50px)}
+.hero h1{font-size:clamp(2.4rem,8vw,7.4rem);overflow-wrap:break-word}
+.hero p{color:var(--grey);font-size:1.05rem;max-width:40ch;margin-bottom:24px}
+.hero .ctas{display:flex;gap:10px;flex-wrap:wrap}
+.strip{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:12px;height:clamp(320px,42vw,560px)}
+.strip figure{overflow:hidden;position:relative}
+.strip img{width:100%;height:100%;object-fit:cover}
+.strip figcaption{position:absolute;left:14px;bottom:14px;background:var(--white);padding:6px 12px;font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+
+.nums{border-bottom:1px solid var(--line)}
+.nums .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.nums .wrap>div{padding:34px 24px;border-right:1px solid var(--line);text-align:center}
+.nums .wrap>div:last-child{border-right:0}
+.nums b{font-size:clamp(2.4rem,4.4vw,3.6rem);font-weight:800;letter-spacing:-.04em;display:block;line-height:1;font-variant-numeric:tabular-nums}
+.nums span{font-size:.9rem;color:var(--grey)}
+
+.amb{padding:clamp(70px,9vw,120px) 0}
+.ahead{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:34px}
+.ahead h2{font-size:clamp(2.4rem,5vw,4.2rem);margin-top:12px}
+.tabs{display:flex;gap:0;border:1px solid var(--black);flex-wrap:wrap}
+.tabs button{background:none;border:0;padding:12px 20px;font:inherit;font-weight:500;font-size:.9rem;cursor:pointer;color:var(--black)}
+.tabs button+button{border-left:1px solid var(--black)}
+.tabs button.on{background:var(--black);color:var(--white)}
+.panel{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(24px,4vw,60px);align-items:stretch}
+.panel .pic{position:relative;overflow:hidden;aspect-ratio:4/3.3;background:var(--stone)}
+.panel .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .5s}
+.panel .side{display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.panel h3{font-size:clamp(1.8rem,3vw,2.6rem)}
+.panel h3 em{font-family:var(--serif);font-weight:400;font-style:italic}
+.panel p{color:var(--grey);margin-top:14px}
+.panel ul{list-style:none;border-top:1px solid var(--line);margin-top:20px}
+.panel li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.panel li span{color:var(--grey)}
+.thumb{aspect-ratio:16/10;overflow:hidden}.thumb img{width:100%;height:100%;object-fit:cover}
+
+.method{background:var(--black);color:var(--white);padding:clamp(70px,9vw,120px) 0}
+.method .cap{color:#9a958e}
+.method h2{font-size:clamp(2.4rem,5vw,4.2rem);margin:12px 0 50px;max-width:16ch}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid #333}
+.mgrid div{padding:34px 30px 10px 0}
+.mgrid div+div{padding-left:30px;border-left:1px solid #333}
+.mgrid b{font-family:var(--serif);font-weight:400;font-style:italic;font-size:2.6rem;color:#C9A57E;display:block;line-height:1;margin-bottom:14px}
+.mgrid h3{font-size:1.6rem;margin-bottom:10px;letter-spacing:-.02em}
+.mgrid p{color:#b5b0a8;font-size:.95rem}
+
+.projects{padding:clamp(70px,9vw,120px) 0}
+.pj{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.pj figure{overflow:hidden;cursor:zoom-in;position:relative}
+.pj img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.pj figure:hover img{transform:scale(1.04)}
+.pj .a{grid-column:1/8;aspect-ratio:4/3}.pj .b{grid-column:8/13}.pj .b img{position:absolute;inset:0}
+.pj .c{grid-column:1/5;aspect-ratio:3/4}.pj .d{grid-column:5/9;aspect-ratio:3/4}.pj .e{grid-column:9/13;aspect-ratio:3/4}
+.pj figcaption{position:absolute;left:0;bottom:0;right:0;padding:16px;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;font-size:.85rem}
+.pj figcaption b{display:block;font-size:1.05rem;font-weight:600}
+
+.pro{background:var(--stone);padding:clamp(70px,9vw,110px) 0}
+.pro .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+.pro h2{font-size:clamp(2.2rem,4.4vw,3.6rem);margin:12px 0 18px}
+.pro p{color:#57534d;max-width:50ch;margin-bottom:14px}
+.pro .imgs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pro .imgs img{aspect-ratio:3/4;object-fit:cover;width:100%}
+
+
+.contact{padding:clamp(70px,9vw,120px) 0}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px)}
+.contact h2{font-size:clamp(2.6rem,6vw,5rem)}
+.contact .info{margin-top:30px;display:grid;gap:16px;font-size:.98rem}
+.contact .info b{display:block;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);font-weight:600;margin-bottom:2px}
+form{display:grid;gap:18px}
+label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);font-weight:600;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #bdb8b0;padding:10px 0 12px;font:inherit;font-size:1rem;color:var(--black)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--black)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+#ok{color:var(--walnut);font-weight:500}
+footer{background:var(--black);color:#8f8a83;font-size:.84rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:28px;padding-bottom:28px}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;z-index:100;padding:24px}
+.lb.on{display:flex}.lb img{max-height:90vh;max-width:92vw}
+
+@media (max-width:920px){
+  .nav ul{display:none;position:absolute;top:76px;left:0;right:0;background:var(--white);flex-direction:column;gap:0;padding:8px 24px 20px;border-bottom:1px solid var(--line)}
+  .nav ul.open{display:flex}.nav ul li{padding:12px 0}.mt{display:block}.nav .btn{display:none}
+  .hero .top,.panel,.pro .wrap,.contact .wrap{grid-template-columns:1fr}
+  .strip{grid-template-columns:1fr 1fr;height:auto}.strip figure{aspect-ratio:3/4}.strip figure:first-child{grid-column:1/-1;aspect-ratio:16/10}
+  .nums .wrap{grid-template-columns:1fr 1fr}.nums .wrap>div{padding:26px 12px;border-bottom:1px solid var(--line)}.nums .wrap>div:nth-child(odd){border-right:1px solid var(--line)}.nums .wrap>div:nth-child(even){border-right:0}.nums .wrap>div:nth-child(n+3){border-bottom:0}
+  .mgrid{grid-template-columns:1fr}.mgrid div+div{padding-left:0;border-left:0;border-top:1px solid #333}
+  .pj .a,.pj .b,.pj .c,.pj .d,.pj .e{grid-column:1/-1;aspect-ratio:4/3}
+}
+@media (max-width:480px){.row{grid-template-columns:1fr}.tabs button{flex:1 1 50%}.tabs button+button{border-left:0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.35)}.wa svg{width:30px;height:30px;color:#fff}
+#walink{display:none;margin:0}
+/* mobile symmetry */
+.wrap>*{min-width:0}
+h1,h2,h3{overflow-wrap:break-word}
+@media (max-width:560px){.ctas{display:grid!important;grid-template-columns:1fr;gap:10px}.ctas .btn{justify-content:center;width:100%}form button[type=submit]{width:100%;justify-content:center;justify-self:stretch!important}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#inicio"><img src="img/logo.jpg" alt="SQL Amoblamientos"></a>
+    <ul id="menu">
+      <li><a href="#ambientes">Ambientes</a></li>
+      <li><a href="#metodo">Cómo trabajamos</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#profesionales">Profesionales</a></li>
+      <li><a href="#contacto">Showrooms</a></li>
+    </ul>
+    <a class="btn" href="#contacto">Pedir asesoramiento</a>
+    <button class="mt" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Abrir menú">MENÚ</button>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div class="top">
+      <h1>Amoblamientos <em>únicos</em>, hechos a medida.</h1>
+      <div>
+        <p>Más de 40 años diseñando, fabricando e instalando cocinas, vestidores, baños y livings que coinciden exactamente con lo proyectado.</p>
+        <div class="ctas"><a class="btn" href="#contacto">Agendar visita al showroom</a><a class="btn o" href="#ambientes">Ver ambientes</a></div>
+      </div>
+    </div>
+    <div class="strip">
+      <figure><img src="img/hero.jpg" alt="Cocina negra con isla y madera" style="object-position:center 65%"><figcaption>Cocina · Isla</figcaption></figure>
+      <figure><img src="img/a7.jpg" alt="Living con mueble de TV"><figcaption>Living</figcaption></figure>
+      <figure><img src="img/a10.jpg" alt="Vestidor con puertas corredizas"><figcaption>Vestidor</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="nums">
+  <div class="wrap">
+    <div><b>+40</b><span>años creando amoblamientos</span></div>
+    <div><b>+30</b><span>sucursales en todo el país</span></div>
+    <div><b>3</b><span>etapas: diseño, fabricación e instalación</span></div>
+    <div><b>100%</b><span>personalizados</span></div>
+  </div>
+</section>
+
+<section class="amb" id="ambientes">
+  <div class="wrap">
+    <div class="ahead">
+      <div><span class="cap">Ambientes</span><h2>Cada espacio, una <em>oportunidad</em></h2></div>
+      <div class="tabs" role="tablist">
+        <button class="on" data-t="0" role="tab">Cocinas</button>
+        <button data-t="1" role="tab">Vestidores</button>
+        <button data-t="2" role="tab">Living</button>
+        <button data-t="3" role="tab">Lavaderos</button>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="pic"><img id="pimg" src="img/a5.jpg" alt=""></div>
+      <div class="side">
+        <div>
+          <h3 id="ph">Cocinas con <em>carácter</em></h3>
+          <p id="pp">La combinación de materiales, una distribución funcional y una paleta equilibrada transforman la manera de vivir cada día.</p>
+          <ul id="pl"></ul>
+        </div>
+        <div class="thumb"><img id="pthumb" src="img/a4.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method" id="metodo">
+  <div class="wrap">
+    <span class="cap">Cómo trabajamos</span>
+    <h2>Diseño, fabricación e <em>instalación</em>. Todo en casa.</h2>
+    <div class="mgrid">
+      <div><b>i.</b><h3>Diseño</h3><p>Proyectamos junto a vos o a tu arquitecto cada módulo, medida y terminación, con renders para decidir con seguridad.</p></div>
+      <div><b>ii.</b><h3>Fabricación</h3><p>Innovación tecnológica, materia prima seleccionada y control en cada placa y herraje.</p></div>
+      <div><b>iii.</b><h3>Instalación</h3><p>Nuestro equipo técnico instala y ajusta cada pieza para que el resultado sea exactamente lo proyectado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="proyectos">
+  <div class="wrap">
+    <div class="ahead"><div><span class="cap">Proyectos</span><h2>Obras recientes</h2></div><p style="max-width:42ch;color:var(--grey)">Residencias en los principales barrios de Córdoba, donde el equipamiento dialoga con la arquitectura.</p></div>
+    <div class="pj">
+      <figure class="a"><img src="img/a6.jpg" alt="Cocina blanca con isla" loading="lazy"><figcaption><b>Distinción y precisión</b>Cocina con isla</figcaption></figure>
+      <figure class="b"><img src="img/a8.jpg" alt="Living integrado con madera" loading="lazy"><figcaption><b>Proyecto integral</b>Equipamiento y arquitectura</figcaption></figure>
+      <figure class="c"><img src="img/a2.jpg" alt="Cocina gris oscura" loading="lazy"><figcaption><b>Un hogar para disfrutar</b>Cocina en gris grafito</figcaption></figure>
+      <figure class="d"><img src="img/a3.jpg" alt="Cocina blanca frente a ventana" loading="lazy"><figcaption><b>Luz natural</b>Cocina</figcaption></figure>
+      <figure class="e"><img src="img/a9.jpg" alt="Detalle de mesada con escurridor" loading="lazy"><figcaption><b>Detalle</b>Mesada y herrajes</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="pro" id="profesionales">
+  <div class="wrap">
+    <div>
+      <span class="cap">Para arquitectos y desarrolladores</span>
+      <h2>Lo proyectado, <em>igual</em> a lo construido</h2>
+      <p>Trabajamos junto a arquitectos, constructores y desarrolladoras para garantizar que el diseño coincida con la realidad ejecutada, respetando plazos y especificaciones.</p>
+      <p>Nuestro nuevo showroom de Zona Sur está pensado para recibir a profesionales y sus clientes, con muestras de placas, herrajes y terminaciones.</p>
+      <a class="btn" href="#contacto" style="margin-top:12px">Trabajemos juntos</a>
+    </div>
+    <div class="imgs">
+      <img src="img/show.jpg" alt="Showroom Zona Sur de SQL" loading="lazy">
+      <img src="img/sign.jpg" alt="Cartel de SQL Amoblamientos" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <span class="cap">Contacto</span>
+      <h2>Diseñemos tu <em>espacio</em></h2>
+      <div class="info">
+        <div><b>Showroom Zona Sur</b>Forte Mall · Córdoba</div>
+        <div><b>Sucursales</b>Más de 30 en todo el país</div>
+        <div><b>WhatsApp</b><a href="https://wa.me/5493516175120" target="_blank" rel="noopener">351 617-5120</a></div>
+        <div><b>Instagram</b><a href="https://www.instagram.com/sqlamoblamientos/" target="_blank" rel="noopener">@sqlamoblamientos</a></div>
+      </div>
+    </div>
+    <form id="f">
+      <div class="row">
+        <div><label for="n">Nombre</label><input id="n" required></div>
+        <div><label for="c">Ciudad</label><input id="c"></div>
+      </div>
+      <div class="row">
+        <div><label for="e">Email o teléfono</label><input id="e" required></div>
+        <div><label for="a">Ambiente</label><select id="a"><option>Cocina</option><option>Vestidor</option><option>Baño</option><option>Living</option><option>Dormitorio</option><option>Proyecto integral</option></select></div>
+      </div>
+      <div><label for="m">Contanos tu proyecto</label><textarea id="m" rows="3"></textarea></div>
+      <button class="btn" type="submit" style="justify-self:start">Enviar por WhatsApp</button>
+      <a style="color:var(--walnut);font-weight:500" id="walink" target="_blank" rel="noopener">Si no se abrió WhatsApp, tocá acá para enviar tu consulta →</a>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 SQL Amoblamientos® · Diseño | Fabricación | Instalación</span><span>Sitio diseñado por MG Servicios Ejecutivos</span></div></footer>
+<a class="wa" href="https://wa.me/5493516175120" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.2.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg></a>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+const data=[
+ {img:'img/a5.jpg',th:'img/a4.jpg',h:'Cocinas con <em>carácter</em>',p:'La combinación de materiales, una distribución funcional y una paleta equilibrada transforman la manera de vivir cada día.',l:[['Islas y penínsulas','A medida'],['Mesadas','Materiales a elección'],['Herrajes','Seleccionados']]},
+ {img:'img/a10.jpg',th:'img/a1.jpg',h:'Vestidores que <em>ordenan</em>',p:'Puertas corredizas, interiores modulares y terminaciones pensadas para guardar todo sin perder diseño.',l:[['Puertas','Corredizas o batientes'],['Interiores','Modulares'],['Iluminación','Integrada']]},
+ {img:'img/a7.jpg',th:'img/a8.jpg',h:'Living para <em>reunirse</em>',p:'Muebles de TV, bibliotecas y paneles que integran la tecnología con la arquitectura del espacio.',l:[['Muebles de TV','Con luz LED'],['Paneles','Madera y laqueados'],['Guardado','Oculto']]},
+ {img:'img/lav.jpg',th:'img/a3.jpg',h:'Áreas de servicio, <em>precisas</em>',p:'Los espacios de uso intensivo también requieren precisión proyectual: lavaderos que integran equipos y guardado.',l:[['Equipos','Columnas integradas'],['Materiales','Alta resistencia'],['Diseño','Mismo lenguaje que la casa']]}
+];
+const tabs=document.querySelectorAll('.tabs button');
+function show(i){const d=data[i];tabs.forEach(t=>t.classList.toggle('on',+t.dataset.t===i));
+ document.getElementById('pimg').src=d.img;document.getElementById('pthumb').src=d.th;document.getElementById('ph').innerHTML=d.h;document.getElementById('pp').textContent=d.p;
+ document.getElementById('pl').innerHTML=d.l.map(x=>`<li>${x[0]}<span>${x[1]}</span></li>`).join('');}
+tabs.forEach(t=>t.addEventListener('click',()=>show(+t.dataset.t))); show(0);
+const lb=document.getElementById('lb');
+document.querySelectorAll('.pj figure').forEach(f=>f.addEventListener('click',()=>{lb.querySelector('img').src=f.querySelector('img').src;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const v=id=>(document.getElementById(id)||{}).value||'';const t=`Hola SQL! Soy ${v('n')}${v('c')?' de '+v('c'):''}.\nContacto: ${v('e')}\nAmbiente: ${v('a')}\n${v('m')}`;const url='https://wa.me/5493516175120?text='+encodeURIComponent(t);const a=document.getElementById('walink');a.href=url;a.style.display='inline-block';try{window.open(url,'_blank')}catch(err){}});
+</script>
+</body>
+</html>

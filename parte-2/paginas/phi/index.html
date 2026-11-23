@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PHI Domótica</title>
+<meta name="description" content="PHI Domótica: casas inteligentes con I-motic, tecnología cableada certificada de producción nacional. Showroom en Córdoba.">
+<link rel="canonical" href="https://mgserviciosejecutivos.com/paginas/phi/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="PHI Domótica">
+<meta property="og:description" content="PHI Domótica: casas inteligentes con I-motic, tecnología cableada certificada de producción nacional. Showroom en Córdoba.">
+<meta property="og:url" content="https://mgserviciosejecutivos.com/paginas/phi/">
+<meta property="og:image" content="https://mgserviciosejecutivos.com/paginas/phi/og.jpg">
+<meta property="og:image:secure_url" content="https://mgserviciosejecutivos.com/paginas/phi/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vista previa del sitio web de PHI Domótica">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PHI Domótica">
+<meta name="twitter:description" content="PHI Domótica: casas inteligentes con I-motic, tecnología cableada certificada de producción nacional. Showroom en Córdoba.">
+<meta name="twitter:image" content="https://mgserviciosejecutivos.com/paginas/phi/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --graph:#1B1D1F; --panel:#26292C; --lime:#A4E01A; --fog:#F2F3EF; --ink:#111213; --mute:#8E9493;
+  --display:"Unbounded", "Arial Black", Arial, sans-serif; --body:"Figtree", "Helvetica Neue", Arial, sans-serif;
+  /* layout: product-tech page; live 'control panel' demo in the hero, spec rows like a datasheet */
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--graph);color:var(--fog);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,44px)}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+section{scroll-margin-top:80px}
+.lbl{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lime);font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;background:var(--lime);color:var(--ink);text-decoration:none;font-weight:600;border:0;cursor:pointer;font-family:var(--body);font-size:.95rem;transition:transform .2s, box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -10px rgba(164,224,26,.6)}
+.btn.gh{background:transparent;color:var(--fog);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+.btn.gh:hover{box-shadow:inset 0 0 0 1px var(--lime)}
+
+.nav{position:sticky;top:0;z-index:40;background:rgba(27,29,31,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:var(--display);font-weight:700;font-size:1.6rem;text-decoration:none;color:var(--lime);letter-spacing:-.02em;line-height:1}
+.logo small{display:block;font-family:var(--body);font-size:.55rem;letter-spacing:.42em;color:var(--fog);font-weight:500;margin-top:2px}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:.92rem}
+.nav ul a{text-decoration:none;color:#c6cac8}.nav ul a:hover{color:var(--lime)}
+.mt{display:none;background:none;border:0;color:var(--fog);font:inherit;cursor:pointer;letter-spacing:.14em;font-size:.8rem}
+
+.hero{padding:clamp(50px,7vw,90px) 0 clamp(60px,8vw,100px)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,60px);align-items:center}
+.hero h1{font-size:clamp(2.3rem,4.8vw,4.1rem);margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero p{color:#b9bebc;font-size:1.08rem;max-width:46ch;margin-bottom:30px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:40px;font-size:.85rem;color:var(--mute)}
+.trust span{display:flex;gap:8px;align-items:center}
+.trust span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime)}
+
+/* demo panel */
+.demo{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;max-height:640px;width:100%;background:#000}
+.demo .scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:filter .6s}
+.demo.dark .scene{filter:brightness(.35) saturate(.7)}
+.demo .shade{position:absolute;left:0;right:0;top:0;height:0;background:repeating-linear-gradient(#2a2d30 0 10px,#22252a 10px 12px);transition:height .9s ease}
+.demo.blinds .shade{height:46%}
+.ctrl{position:absolute;left:18px;right:18px;bottom:18px;background:rgba(20,22,24,.82);backdrop-filter:blur(14px);border-radius:20px;padding:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;border:1px solid rgba(255,255,255,.08)}
+.tile{background:var(--panel);border:0;border-radius:14px;padding:14px 12px;text-align:left;color:var(--fog);cursor:pointer;font-family:var(--body);transition:background .25s,color .25s}
+.tile svg{width:24px;height:24px;margin-bottom:10px;display:block}
+.tile b{display:block;font-size:.88rem;font-weight:600}
+.tile span{font-size:.75rem;color:var(--mute)}
+.tile.on{background:var(--lime);color:var(--ink)}.tile.on span{color:#2f3d0a}
+.chip{position:absolute;top:18px;left:18px;background:rgba(20,22,24,.82);border-radius:999px;padding:8px 14px;font-size:.78rem;display:flex;gap:8px;align-items:center}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(164,224,26,.25)}
+.temp{position:absolute;top:18px;right:18px;background:rgba(20,22,24,.82);border-radius:16px;padding:10px 14px;text-align:right}
+.temp b{font-family:var(--display);font-size:1.5rem;display:block;line-height:1}
+.temp span{font-size:.7rem;color:var(--mute)}
+
+.light{background:var(--fog);color:var(--ink)}
+.feat{padding:clamp(70px,9vw,110px) 0}
+.fh{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:44px}
+.fh h2{font-size:clamp(1.9rem,3.8vw,3rem);margin-top:12px;max-width:20ch}
+.fh p{max-width:44ch;color:#5a605e}
+.proj .fh p{color:#a9aeac}
+.light .lbl{color:#5d8a00}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fc{background:#fff;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.fc .fi{margin:-28px -28px 10px;aspect-ratio:4/3;overflow:hidden}.fc .fi img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.fc:hover .fi img{transform:scale(1.05)}
+.fc .ic{margin-top:-46px;position:relative;border:4px solid #fff;box-sizing:content-box}
+.fc .ic{width:48px;height:48px;border-radius:14px;background:var(--graph);color:var(--lime);display:grid;place-items:center}
+.fc .ic svg{width:24px;height:24px}
+.fc h3{font-size:1.15rem;margin-top:8px}
+.fc p{font-size:.94rem;color:#5a605e}
+
+.imotic{padding:clamp(70px,9vw,110px) 0}
+.imotic .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+.imotic img{border-radius:24px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.imotic h2{font-size:clamp(1.9rem,3.8vw,3rem);margin:12px 0 18px}
+.imotic p{color:#b9bebc;max-width:50ch}
+.spec{margin-top:28px;border-top:1px solid rgba(255,255,255,.1)}
+.spec div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:.95rem}
+.spec dt,.spec b{color:var(--mute);font-weight:500}
+.vs{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.vs div{background:var(--panel);border-radius:16px;padding:18px}
+.vs h4{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:8px}
+.vs .us{background:var(--lime);color:var(--ink)}.vs .us h4{color:#2f3d0a}
+.vs ul{list-style:none;font-size:.9rem;display:grid;gap:4px}
+
+.proj{padding:clamp(70px,9vw,110px) 0}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pc{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:3/4;cursor:zoom-in}
+.pc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.pc:hover img{transform:scale(1.05)}
+.pc .tx{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff}
+.pc .tx span{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--lime)}
+.pc .tx h3{font-size:1.2rem;margin-top:4px}
+
+.steps{padding:clamp(70px,9vw,110px) 0}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.st{border-top:2px solid var(--ink);padding-top:20px}
+.st b{font-family:var(--display);font-size:2.4rem;line-height:1;color:#5d8a00;display:block;margin-bottom:14px}
+.st h3{font-size:1.05rem;margin-bottom:8px}
+.st p{font-size:.93rem;color:#5a605e}
+.myth{margin-top:56px;background:var(--graph);color:var(--fog);border-radius:26px;padding:clamp(28px,5vw,50px);display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px}
+.myth div h3{font-size:1rem;color:var(--lime);margin-bottom:8px}
+.myth div p{font-size:.93rem;color:#b9bebc}
+
+.contact{padding:clamp(70px,9vw,110px) 0}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px)}
+.contact h2{font-size:clamp(2rem,4.4vw,3.4rem);margin:12px 0 18px}
+.contact p{color:#b9bebc;max-width:46ch}
+.rcol{display:grid;gap:16px;align-content:start}.vida{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:20px}
+.addr{margin-top:28px;background:var(--panel);border-radius:20px;padding:22px;display:grid;gap:12px;font-size:.95rem}
+.addr b{color:var(--lime);font-weight:600}
+form{background:var(--panel);border-radius:24px;padding:clamp(24px,4vw,36px);display:grid;gap:14px;align-content:start;align-self:start}
+label{font-size:.8rem;color:var(--mute);display:block;margin-bottom:6px;font-weight:500}
+input,select,textarea{width:100%;background:var(--graph);border:1px solid #3a3e42;border-radius:12px;padding:13px 14px;font:inherit;color:var(--fog)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--lime)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.checks{display:flex;flex-wrap:wrap;gap:8px}
+.checks label{margin:0;display:flex;gap:6px;align-items:center;background:var(--graph);border:1px solid #3a3e42;border-radius:999px;padding:8px 14px;color:var(--fog);cursor:pointer}
+.checks input{width:auto;accent-color:var(--lime)}
+#ok{color:var(--lime);font-size:.9rem}
+footer{border-top:1px solid rgba(255,255,255,.08);font-size:.84rem;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:26px;padding-bottom:26px}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.93);display:none;align-items:center;justify-content:center;z-index:100;padding:24px}
+.lb.on{display:flex}.lb img{max-height:90vh;max-width:92vw;border-radius:12px}
+
+@media (max-width:960px){
+  .nav ul{display:none;position:absolute;top:74px;left:0;right:0;background:var(--graph);flex-direction:column;gap:0;padding:8px 24px 20px}
+  .nav ul.open{display:flex}.nav ul li{padding:12px 0}.mt{display:block}.nav .btn{display:none}
+  .hero .wrap,.imotic .wrap,.contact .wrap{grid-template-columns:1fr}
+  .fgrid,.pgrid,.myth{grid-template-columns:1fr}.sgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){.ctrl{grid-template-columns:1fr 1fr}.sgrid,.vs,.row{grid-template-columns:1fr}.spec div{grid-template-columns:1fr;gap:2px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.35)}.wa svg{width:30px;height:30px;color:#fff}
+#walink{display:none;margin:0}
+.nums{position:relative;padding:clamp(56px,7vw,80px) 0;background:linear-gradient(rgba(17,18,19,.82),rgba(17,18,19,.82)),url(img/tablero.jpg) center/cover}
+.nums .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.nums b{font-family:var(--display);font-size:clamp(2rem,4vw,3.2rem);color:var(--lime);display:block;line-height:1.1;font-variant-numeric:tabular-nums}
+.nums span{color:#c6cac8;font-size:.92rem}
+@media (max-width:760px){.nums .wrap{grid-template-columns:1fr 1fr;gap:28px 12px}}
+/* mobile symmetry */
+@media (max-width:560px){.trust{flex-direction:column;gap:10px}}
+.wrap>*{min-width:0}
+h1,h2,h3{overflow-wrap:break-word}
+@media (max-width:560px){.ctas{display:grid!important;grid-template-columns:1fr;gap:10px}.ctas .btn{justify-content:center;width:100%}form button[type=submit]{width:100%;justify-content:center;justify-self:stretch!important}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#inicio">PHI<small>DOMÓTICA</small></a>
+    <ul id="menu">
+      <li><a href="#funciones">Funciones</a></li>
+      <li><a href="#imotic">I-motic</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#contacto">Showroom</a></li>
+    </ul>
+    <a class="btn" href="#contacto">Agendar visita</a>
+    <button class="mt" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Abrir menú">MENÚ</button>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="lbl">Casas inteligentes · Córdoba</span>
+      <h1>Tu casa, <em>adaptada a vos</em>.</h1>
+      <p>Encendé luces, regulá la temperatura, bajá persianas o mirá tus cámaras desde cualquier lugar. Con I-motic, nuestra tecnología cableada, certificada y de producción nacional.</p>
+      <div class="ctas"><a class="btn" href="#contacto">Coordinar una charla</a><a class="btn gh" href="#imotic">Conocer I-motic</a></div>
+      <div class="trust"><span>Certificación IRAM</span><span>100% cableado</span><span>Producción nacional</span></div>
+    </div>
+    <div class="demo" id="demo" aria-label="Demo interactiva del panel de control">
+      <img class="scene" src="img/scene.jpg" alt="Living de departamento con cortinas automatizadas">
+      <div class="shade" aria-hidden="true"></div>
+      <div class="chip"><i></i>Casa conectada · probá el panel</div>
+      <div class="temp"><b id="tv">22°</b><span>Clima</span></div>
+      <div class="ctrl">
+        <button class="tile on" data-k="light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg><b>Luces</b><span>Encendidas</span></button>
+        <button class="tile" data-k="blinds"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h18M5 4v10h14V4M5 8h14M5 11h14M12 14v4"/><circle cx="12" cy="19.5" r="1.5"/></svg><b>Persianas</b><span>Abiertas</span></button>
+        <button class="tile on" data-k="clima"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z"/></svg><b>Clima</b><span>22 °C</span></button>
+        <button class="tile on" data-k="cam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="14" height="10" rx="2"/><path d="m16 11 6-3v8l-6-3"/></svg><b>Cámaras</b><span>Grabando</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light feat" id="funciones">
+  <div class="wrap">
+    <div class="fh">
+      <div><span class="lbl">Funciones</span><h2>Tu casa puede hacer mucho más por vos</h2></div>
+      <p>Aunque parezca del futuro, la domótica ya es parte del presente. No es un lujo: es automatizar y optimizar el funcionamiento de tu hogar.</p>
+    </div>
+    <div class="fgrid">
+      <div class="fc"><div class="fi"><img src="img/f-luces.jpg" alt="" loading="lazy"></div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg></div><h3>Iluminación</h3><p>Escenas, dimerización y horarios. Toda la casa se apaga con un solo toque al salir.</p></div>
+      <div class="fc"><div class="fi"><img src="img/f-clima.jpg" alt="" loading="lazy"></div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z"/></svg></div><h3>Climatización</h3><p>Temperatura ideal en cada ambiente y ahorro de energía con eficiencia activa.</p></div>
+      <div class="fc"><div class="fi"><img src="img/f-cortinas.jpg" alt="" loading="lazy"></div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h18M5 4v10h14V4M5 8h14M5 11h14"/></svg></div><h3>Persianas y cortinas</h3><p>Motorizadas y programadas según la luz del día o tu rutina.</p></div>
+      <div class="fc"><div class="fi"><img src="img/f-seguridad.jpg" alt="" loading="lazy"></div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg></div><h3>Seguridad</h3><p>Cámaras, sensores y alertas en tu celular, estés donde estés.</p></div>
+      <div class="fc"><div class="fi"><img src="img/f-app.jpg" alt="" loading="lazy"></div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Control desde la app</h3><p>Todo tu hogar en el celular, desde cualquier lugar.</p></div>
+      <div class="fc"><div class="fi"><img src="img/f-escenas.jpg" alt="" loading="lazy"></div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 16c2 0 2-1.5 4-1.5S8 16 10 16s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M7 12V4h4M17 12V4h-4"/></svg></div><h3>Escenas</h3><p>Con un toque, cine, cena o descanso: luces, cortinas y clima se acomodan solos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="imotic" id="imotic">
+  <div class="wrap">
+    <img src="img/imotic.jpg" alt="Módulo I-motic de PHI Domótica" loading="lazy">
+    <div>
+      <span class="lbl">Tecnología propia</span>
+      <h2>I-motic: la base sólida de tu hogar inteligente</h2>
+      <p>Detrás de cada función hay un sistema pensado para responder a tus necesidades: módulos, tableros y dispositivos que trabajan en conjunto. Lo diseñamos y producimos en Argentina.</p>
+      <dl class="spec">
+        <div><b>Conexión</b><span>100% cableada</span></div>
+        <div><b>Respuesta</b><span>Instantánea, cero latencia</span></div>
+        <div><b>Estabilidad</b><span>No depende de la señal Wi-Fi</span></div>
+        <div><b>Calidad</b><span>Productos certificados por IRAM</span></div>
+        <div><b>Origen</b><span>Producción nacional</span></div>
+      </dl>
+      <div class="vs">
+        <div class="us"><h4>I-motic cableado</h4><ul><li>✓ Estable siempre</li><li>✓ Sin cortes ni demoras</li><li>✓ Pensado para durar</li></ul></div>
+        <div><h4>Sistemas solo Wi-Fi</h4><ul><li>– Dependen del router</li><li>– Pueden tener demoras</li><li>– Más mantenimiento</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proj" id="proyectos">
+  <div class="wrap">
+    <div class="fh"><div><span class="lbl">Proyectos PHI</span><h2>Donde ya estamos</h2></div><p>Trabajamos junto a arquitectos, desarrolladoras y familias desde la etapa de obra.</p></div>
+    <div class="pgrid">
+      <div class="pc"><img src="img/hangar.jpg" alt="Casa Hangar en obra" loading="lazy"><div class="tx"><span>En obra</span><h3>Casa Hangar</h3></div></div>
+      <div class="pc"><img src="img/duo.jpg" alt="Departamento modelo DUO automatizado" loading="lazy"><div class="tx"><span>Desarrollos</span><h3>Departamento modelo DUO, Grupo Proaco</h3></div></div>
+      <div class="pc"><img src="img/black.jpg" alt="Cocina total black automatizada" loading="lazy"><div class="tx"><span>Diseño</span><h3>Cocina total black</h3></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="nums">
+  <div class="wrap">
+    <div class="nb"><b>73.216</b><span>m² domotizados</span></div>
+    <div class="nb"><b>+245</b><span>clientes que confiaron</span></div>
+    <div class="nb"><b>+316</b><span>proyectos inteligentes</span></div>
+    <div class="nb"><b>IRAM</b><span>productos certificados</span></div>
+  </div>
+</section>
+
+<section class="light steps" id="proceso">
+  <div class="wrap">
+    <div class="fh"><div><span class="lbl">Cómo trabajamos</span><h2>La domótica se planifica en obra</h2></div><p>Tu casa es uno de los proyectos más importantes de tu vida. Por eso te acompañamos desde el principio.</p></div>
+    <div class="sgrid">
+      <div class="st"><b>01</b><h3>Charla en showroom</h3><p>Conocés el sistema funcionando y nos contás cómo vivís.</p></div>
+      <div class="st"><b>02</b><h3>Relevamiento de obra</h3><p>Visitamos el lugar para ver cada detalle técnico.</p></div>
+      <div class="st"><b>03</b><h3>Diseño del sistema</h3><p>Definimos funciones, tableros y cableado a medida.</p></div>
+      <div class="st"><b>04</b><h3>Instalación y entrega</h3><p>Programamos todo y te enseñamos a usarlo.</p></div>
+    </div>
+    <div class="myth">
+      <div><h3>Mito: “es solo para casas de lujo”</h3><p>Hay soluciones escalables para cada proyecto y presupuesto.</p></div>
+      <div><h3>Mito: “se agrega al final”</h3><p>Planificarla durante la obra evita roturas y ahorra dinero.</p></div>
+      <div><h3>Mito: “es complicada de usar”</h3><p>Se maneja con botones o desde la app. Lo simple es lo que funciona.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <span class="lbl">Showroom</span>
+      <h2>Vení a ver tu próxima casa funcionando</h2>
+      <p>Escribinos y coordinamos una charla en nuestro showroom. Si sos arquitecto o desarrollador, también trabajamos con vos.</p>
+      <div class="addr">
+        <div><b>Oficina comercial y Showroom</b><br>Av. Colón 5050, 3° piso, Of. 17 y 18 · Edificio Gama, Córdoba</div>
+        <div><b>WhatsApp</b><br><a href="https://wa.me/5493515189716" target="_blank" rel="noopener">351 518-9716</a></div>
+        <div><b>Email</b><br><a href="mailto:info@phidomotica.com.ar">info@phidomotica.com.ar</a></div>
+        <div><b>Redes</b><br><a href="https://www.instagram.com/phidomotica/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/phidomotica/" target="_blank" rel="noopener">Facebook</a></div>
+      </div>
+    </div>
+    <div class="rcol">
+    <img class="vida" src="img/vida.jpg" alt="Mujer descansando en su living automatizado" loading="lazy">
+    <form id="f">
+      <div class="row">
+        <div><label for="n">Nombre</label><input id="n" required></div>
+        <div><label for="t">Teléfono</label><input id="t" required></div>
+      </div>
+      <div><label for="e">Etapa de tu proyecto</label><select id="e"><option>Estoy por construir</option><option>En obra</option><option>Casa terminada</option><option>Soy arquitecto / desarrollador</option></select></div>
+      <div><label>¿Qué te gustaría automatizar?</label>
+        <div class="checks"><label><input type="checkbox" value="Luces">Luces</label><label><input type="checkbox" value="Clima">Clima</label><label><input type="checkbox" value="Persianas">Persianas</label><label><input type="checkbox" value="Seguridad">Seguridad</label><label><input type="checkbox" value="Piscina">Piscina</label></div></div>
+      <button class="btn" type="submit" style="justify-self:start">Enviar por WhatsApp</button>
+      <a style="color:var(--lime);font-size:.9rem" id="walink" target="_blank" rel="noopener">Si no se abrió WhatsApp, tocá acá para enviar tu consulta →</a>
+    </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 PHI Domótica · I-motic · Córdoba, Argentina</span><span>Sitio diseñado por MG Servicios Ejecutivos</span></div></footer>
+<a class="wa" href="https://wa.me/5493515189716" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.2.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg></a>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+const demo=document.getElementById('demo'); const tv=document.getElementById('tv');
+const txt={light:['Encendidas','Apagadas'],blinds:['Cerradas','Abiertas'],clima:['22 °C','Apagado'],cam:['Grabando','Pausa']};
+document.querySelectorAll('.tile').forEach(t=>t.addEventListener('click',()=>{
+  t.classList.toggle('on'); const on=t.classList.contains('on'); const k=t.dataset.k;
+  t.querySelector('span').textContent=on?txt[k][0]:txt[k][1];
+  if(k==='light') demo.classList.toggle('dark',!on);
+  if(k==='blinds') demo.classList.toggle('blinds',on);
+  if(k==='clima') tv.textContent=on?'22°':'--';
+}));
+const lb=document.getElementById('lb');
+document.querySelectorAll('.pc').forEach(f=>f.addEventListener('click',()=>{lb.querySelector('img').src=f.querySelector('img').src;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const v=id=>(document.getElementById(id)||{}).value||'';const t=`Hola PHI! Soy ${v('n')} (tel: ${v('t')}).\nEtapa: ${v('e')}\nMe interesa automatizar: ${[...document.querySelectorAll('.checks input:checked')].map(c=>c.value).join(', ')||'a definir'}\nQuiero coordinar una charla en el showroom.`;const url='https://wa.me/5493515189716?text='+encodeURIComponent(t);const a=document.getElementById('walink');a.href=url;a.style.display='inline-block';try{window.open(url,'_blank')}catch(err){}});
+</script>
+</body>
+</html>

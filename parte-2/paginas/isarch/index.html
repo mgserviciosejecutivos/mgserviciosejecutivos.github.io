@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>is.ARCH Estudio Integral</title>
+<meta name="description" content="is.ARCH, estudio integral de arquitectura, interiorismo y paisajismo en Córdoba. Diseñamos hogares para la vida real.">
+<link rel="canonical" href="https://mgserviciosejecutivos.com/paginas/isarch/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="is.ARCH Estudio Integral">
+<meta property="og:description" content="is.ARCH, estudio integral de arquitectura, interiorismo y paisajismo en Córdoba. Diseñamos hogares para la vida real.">
+<meta property="og:url" content="https://mgserviciosejecutivos.com/paginas/isarch/">
+<meta property="og:image" content="https://mgserviciosejecutivos.com/paginas/isarch/og.jpg">
+<meta property="og:image:secure_url" content="https://mgserviciosejecutivos.com/paginas/isarch/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vista previa del sitio web de is.ARCH Estudio Integral">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="is.ARCH Estudio Integral">
+<meta name="twitter:description" content="is.ARCH, estudio integral de arquitectura, interiorismo y paisajismo en Córdoba. Diseñamos hogares para la vida real.">
+<meta name="twitter:image" content="https://mgserviciosejecutivos.com/paginas/isarch/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --stone:#E9E6E0; --paper:#F5F3EF; --ink:#1E211E; --moss:#33402F; --clay:#9C8A72; --mute:#6B6B63;
+  --display:"Bodoni Moda", "Didot", Georgia, serif; --body:"Manrope", "Helvetica Neue", Arial, sans-serif;
+  /* layout: editorial grid, asymmetric splits, generous whitespace, thin rules like a drawing sheet */
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;text-wrap:balance;letter-spacing:-.01em}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);display:flex;gap:14px;align-items:center}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid rgba(30,33,30,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--display);font-size:1.55rem;text-decoration:none;letter-spacing:.01em}
+.brand b{font-weight:500}
+.nav ul{display:flex;gap:34px;list-style:none;font-size:.85rem;letter-spacing:.06em}
+.nav ul a{text-decoration:none;color:var(--mute);transition:color .2s}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);text-decoration:none;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;transition:all .25s;cursor:pointer;font-family:var(--body)}
+.btn:hover{background:var(--moss);border-color:var(--moss)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.menu-t{display:none;background:none;border:0;font:inherit;font-size:.8rem;letter-spacing:.2em;cursor:pointer}
+
+/* hero */
+.hero{padding:clamp(40px,7vw,90px) 0 clamp(50px,7vw,100px)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,80px);align-items:center}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.6rem);margin:26px 0 28px}
+.hero h1 em{font-style:italic;color:var(--moss)}
+.hero p.lead{font-size:1.08rem;color:var(--mute);max-width:46ch;margin-bottom:36px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-img{position:relative;aspect-ratio:1/0.9;overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 50%}
+.hero-img .tag{position:absolute;left:0;bottom:0;background:var(--paper);padding:14px 20px;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase}
+.disc{display:flex;gap:0;margin-top:56px;border-top:1px solid rgba(30,33,30,.15)}
+.disc div{flex:1;padding:20px 0 0;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.disc div span{display:block;font-family:var(--display);font-size:1.9rem;letter-spacing:0;text-transform:none;color:var(--ink);margin-bottom:4px}
+
+/* manifesto */
+.manifesto{background:var(--moss);color:#E9E6DD;padding:clamp(70px,10vw,130px) 0}
+.manifesto .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:60px}
+.manifesto .eyebrow{color:#B9C0AE}
+.manifesto blockquote{font-family:var(--display);font-size:clamp(1.7rem,3.2vw,2.7rem);line-height:1.25}
+.manifesto blockquote em{color:#D3C2A6}
+.manifesto p{margin-top:26px;color:#C7CCBE;max-width:58ch}
+
+/* services */
+section{scroll-margin-top:80px}
+.services{padding:clamp(70px,10vw,130px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:56px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(2.2rem,4.4vw,3.6rem);margin-top:16px}
+.sec-head p{max-width:42ch;color:var(--mute)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(30,33,30,.18)}
+.svc article{padding:38px 32px 40px 0;border-right:1px solid rgba(30,33,30,.12)}
+.svc article+article{padding-left:32px}
+.svc article:last-child{border-right:0}
+.svc .n{font-family:var(--display);font-style:italic;color:var(--clay);font-size:1.1rem}
+.svc h3{font-size:2rem;margin:14px 0 14px}
+.svc p{color:var(--mute);font-size:.96rem}
+.svc ul{list-style:none;margin-top:20px;font-size:.88rem}
+.svc li{padding:9px 0;border-bottom:1px dashed rgba(30,33,30,.15)}
+
+/* projects */
+.projects{padding:0 0 clamp(70px,10vw,130px)}
+.pgrid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:110px;gap:16px}
+.pgrid figure{position:relative;overflow:hidden;cursor:zoom-in;background:var(--stone)}
+.pgrid img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.pgrid figure:hover img{transform:scale(1.04)}
+.pgrid figcaption{position:absolute;left:14px;bottom:12px;background:var(--paper);padding:6px 12px;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
+.g1{grid-column:1/6;grid-row:span 5}.g2{grid-column:6/10;grid-row:span 3}.g3{grid-column:10/13;grid-row:span 3}
+.g4{grid-column:6/9;grid-row:span 4}.g5{grid-column:9/13;grid-row:span 4}.g6{grid-column:1/6;grid-row:span 6}
+.g7{grid-column:6/13;grid-row:span 4}.g8{grid-column:1/6;grid-row:span 3}
+
+/* process */
+.process{background:var(--stone);padding:clamp(70px,10vw,130px) 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:10px}
+.step{border-top:1px solid var(--ink);padding-top:22px}
+.step b{font-family:var(--display);font-size:2.6rem;font-weight:400;display:block;line-height:1;margin-bottom:16px;color:var(--moss)}
+.step h3{font-family:var(--body);font-weight:600;font-size:1rem;letter-spacing:.02em;margin-bottom:8px}
+.step p{font-size:.92rem;color:var(--mute)}
+.callout{margin-top:60px;display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.callout img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.callout h3{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:18px}
+.callout p{color:var(--mute);margin-bottom:14px;max-width:52ch}
+
+/* team */
+.team{padding:clamp(70px,10vw,130px) 0}
+.team .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,80px);align-items:center}
+.team img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.team h2{font-size:clamp(2.2rem,4vw,3.4rem);margin:16px 0 24px}
+.people{margin-top:30px;border-top:1px solid rgba(30,33,30,.18)}
+.people div{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(30,33,30,.12);font-size:.95rem}
+.people span{color:var(--mute);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);padding:clamp(70px,10vw,120px) 0}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.contact h2{font-size:clamp(2.4rem,5vw,4.2rem)}
+.contact h2 em{color:var(--clay)}
+.contact .eyebrow{color:#9a9a90}
+.contact p{color:#B9B9AF;margin:22px 0 30px;max-width:44ch}
+form{display:grid;gap:16px}
+label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#9a9a90}
+input,select,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #4a4d48;color:var(--paper);padding:10px 0 12px;font:inherit;font-size:1rem}
+select option{color:#111}
+textarea{resize:vertical;min-height:90px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--clay)}
+.contact .btn{background:var(--paper);color:var(--ink);border-color:var(--paper);justify-self:start;margin-top:8px}
+.contact .btn:hover{background:var(--clay);border-color:var(--clay);color:var(--ink)}
+.links{display:flex;flex-direction:column;align-items:flex-start;gap:14px;font-size:.85rem;letter-spacing:.08em}
+.links a{text-decoration:none;border-bottom:1px solid #555;padding-bottom:3px}
+footer{background:var(--ink);color:#8b8b82;border-top:1px solid #33352f;font-size:.78rem}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:26px;padding-bottom:26px;flex-wrap:wrap}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(20,22,20,.94);display:none;align-items:center;justify-content:center;z-index:100;padding:24px}
+.lb.on{display:flex}
+.lb img{max-height:88vh;max-width:92vw;object-fit:contain}
+.lb button{position:absolute;top:18px;right:22px;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer}
+
+.rv{transform:translateY(18px);transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{transform:none}
+@media (prefers-reduced-motion:reduce){.rv{transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  .nav ul{display:none;position:absolute;top:72px;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;padding:10px 24px 20px;border-bottom:1px solid rgba(0,0,0,.08)}
+  .nav ul.open{display:flex}.nav ul li{padding:12px 0}
+  .menu-t{display:block}.nav .btn{display:none}
+  .hero .wrap,.manifesto .wrap,.team .wrap,.contact .wrap,.callout{grid-template-columns:1fr}
+  .svc{grid-template-columns:1fr}.svc article,.svc article+article{padding:30px 0;border-right:0;border-bottom:1px solid rgba(30,33,30,.12)}
+  .steps{grid-template-columns:1fr 1fr}
+  .pgrid{grid-template-columns:1fr 1fr;grid-auto-rows:auto}
+  .pgrid figure{grid-column:auto!important;grid-row:auto!important;aspect-ratio:3/4}
+  .pgrid .g1,.pgrid .g7{grid-column:1/-1!important;aspect-ratio:4/3}
+}
+@media (max-width:480px){.steps{grid-template-columns:1fr}.disc div{font-size:.62rem;letter-spacing:.12em}}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.35)}.wa svg{width:30px;height:30px;color:#fff}
+#walink{display:none;margin:0}
+/* mobile symmetry */
+@media (max-width:900px){.pgrid .g6{grid-column:1/-1!important;aspect-ratio:4/3}}
+.wrap>*{min-width:0}
+h1,h2,h3{overflow-wrap:break-word}
+@media (max-width:560px){.ctas{display:grid!important;grid-template-columns:1fr;gap:10px}.ctas .btn{justify-content:center;width:100%}form button[type=submit]{width:100%;justify-content:center;justify-self:stretch!important}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio">is.<b>ARCH</b></a>
+    <ul id="menu">
+      <li><a href="#estudio">Estudio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="btn" href="#contacto">¿Comenzamos?</a>
+    <button class="menu-t" aria-label="Abrir menú" onclick="document.getElementById('menu').classList.toggle('open')">MENÚ</button>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Estudio integral · Córdoba</div>
+      <h1>Diseñamos hogares para <em>la vida real</em>.</h1>
+      <p class="lead">Arquitectura, interiorismo y paisajismo pensados en conjunto, desde el primer boceto hasta el último detalle. Un solo equipo, una sola mirada para tu casa.</p>
+      <div class="ctas">
+        <a class="btn" href="#contacto">Contanos tu proyecto</a>
+        <a class="btn ghost" href="#proyectos">Ver proyectos</a>
+      </div>
+      <div class="disc">
+        <div><span>01</span>Arquitectura</div>
+        <div><span>02</span>Interiorismo</div>
+        <div><span>03</span>Paisajismo</div>
+      </div>
+    </div>
+    <div class="hero-img rv">
+      <img src="img/hero.jpg" alt="Vivienda proyectada por is.ARCH con galería y jardín">
+      <div class="tag">Vivienda unifamiliar · El Terrón, Mendiolaza</div>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto" id="estudio">
+  <div class="wrap">
+    <div class="eyebrow">El estudio</div>
+    <div>
+      <blockquote>Detrás de un espacio que transmite calma hay cientos de <em>decisiones invisibles</em>. Nosotros las tomamos con vos.</blockquote>
+      <p>El puente entre una idea y la realidad puede ser abrumador si se transita solo. En is.ARCH acompañamos cada etapa: proyecto, materialidad, obra, styling y verde. Así la casa se siente tuya desde el primer día, y no "quedada en el tiempo".</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Servicios</div><h2>Una mirada integral</h2></div>
+      <p>Pensar el interiorismo cuando la obra ya terminó es el error que más encarece un proyecto. Por eso diseñamos todo junto.</p>
+    </div>
+    <div class="svc">
+      <article class="rv">
+        <span class="n">i.</span><h3>Arquitectura</h3>
+        <p>Viviendas nuevas, ampliaciones y remodelaciones que acompañan la evolución de tu familia.</p>
+        <ul><li>Anteproyecto y proyecto ejecutivo</li><li>Remodelaciones integrales</li><li>Dirección y seguimiento de obra</li></ul>
+      </article>
+      <article class="rv">
+        <span class="n">ii.</span><h3>Interiorismo</h3>
+        <p>Espacios funcionales y cálidos, con la materialidad y el equipamiento definidos a tiempo.</p>
+        <ul><li>Cocinas, baños y dormitorios</li><li>Diseño de mobiliario a medida</li><li>Styling y ambientación</li></ul>
+      </article>
+      <article class="rv">
+        <span class="n">iii.</span><h3>Paisajismo</h3>
+        <p>El verde como parte del proyecto: jardines residenciales y espacios corporativos.</p>
+        <ul><li>Jardines y galerías</li><li>Paisajismo corporativo</li><li>Selección de especies y riego</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="proyectos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Proyectos</div><h2>Obras y espacios</h2></div>
+      <p>Una selección de trabajos recientes: viviendas, interiores y espacios de trabajo diseñados por el estudio.</p>
+    </div>
+    <div class="pgrid">
+      <figure class="g1"><img src="img/p5.jpg" alt="Galería de ladrillo con arcos" loading="lazy"><figcaption>Galería · Exterior</figcaption></figure>
+      <figure class="g2"><img src="img/p2.jpg" alt="Oficina con revestimiento de madera" loading="lazy"><figcaption>Oficinas</figcaption></figure>
+      <figure class="g3"><img src="img/p3.jpg" alt="Baño con ducha de vidrio" loading="lazy"><figcaption>Baño</figcaption></figure>
+      <figure class="g4"><img src="img/p1.jpg" alt="Dormitorio infantil" loading="lazy"><figcaption>Styling</figcaption></figure>
+      <figure class="g5"><img src="img/p7.jpg" alt="Muro de piedra y luz natural" loading="lazy"><figcaption>Materialidad</figcaption></figure>
+      <figure class="g6"><img src="img/p6.jpg" alt="Vivienda con fachada de piedra" loading="lazy"><figcaption>Remodelación</figcaption></figure>
+      <figure class="g7"><img src="img/hero.jpg" alt="Vivienda moderna con jardín" loading="lazy"><figcaption>Vivienda · Paisajismo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="proceso">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Cómo trabajamos</div><h2>Del primer café a la llave en mano</h2></div>
+    </div>
+    <div class="steps">
+      <div class="step rv"><b>01</b><h3>Escucha</h3><p>Conocemos tu forma de vivir, tus tiempos y tu presupuesto.</p></div>
+      <div class="step rv"><b>02</b><h3>Proyecto</h3><p>Diseñamos arquitectura, interiores y verde como un todo.</p></div>
+      <div class="step rv"><b>03</b><h3>Obra</h3><p>Acompañamos la ejecución para que lo proyectado sea lo construido.</p></div>
+      <div class="step rv"><b>04</b><h3>Etapa final</h3><p>Fachada, materialidad y paisajismo: el proyecto se siente tuyo.</p></div>
+    </div>
+    <div class="callout">
+      <img src="img/p4.jpg" alt="Arquitecta revisando materiales y planos" loading="lazy">
+      <div>
+        <div class="eyebrow">Caso real · Salsipuedes</div>
+        <h3>Diseñar el interior a tiempo ahorra dinero</h3>
+        <p>En un proyecto en Salsipuedes, el cliente nos contactó con la obra en marcha. Al integrar el interiorismo durante la construcción se evitaron demoliciones, cambios de instalaciones y compras apuradas.</p>
+        <p>Esa es la diferencia de trabajar con un estudio integral: cada decisión llega en su momento.</p>
+        <a class="btn ghost" href="#contacto" style="margin-top:10px">Quiero asesoramiento</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="wrap">
+    <img src="img/team.jpg" alt="El equipo de is.ARCH" loading="lazy">
+    <div>
+      <div class="eyebrow">Equipo</div>
+      <h2>Tres arquitectos, una misma manera de mirar</h2>
+      <p style="color:var(--mute);max-width:50ch">Somos un estudio joven de Córdoba que cree en la arquitectura cercana: escuchar, explicar con claridad y estar presentes en obra.</p>
+      <div class="people">
+        <div>Micaela Budano<span>Arquitecta</span></div>
+        <div>Emilia De la Fuente<span>Arquitecta</span></div>
+        <div>Francisco Tamantini Z.<span>Arquitecto</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Contacto</div>
+      <h2>¿Comenzamos <em>tu proyecto</em>?</h2>
+      <p>Contanos qué querés construir, remodelar o transformar. Te respondemos para coordinar una primera reunión.</p>
+      <div class="links">
+        <a href="https://wa.me/5493517914897" target="_blank" rel="noopener">WhatsApp · 351 791-4897</a>
+        <a href="https://www.instagram.com/is.arch.arq/" target="_blank" rel="noopener">Instagram · @is.arch.arq</a>
+        <a href="https://www.facebook.com/share/18DDX86L2k/" target="_blank" rel="noopener">Facebook · is.ARCH</a>
+      </div>
+    </div>
+    <form id="f">
+      <div><label for="n">Nombre</label><input id="n" required></div>
+      <div><label for="t">Tipo de proyecto</label>
+        <select id="t"><option>Vivienda nueva</option><option>Remodelación</option><option>Interiorismo</option><option>Paisajismo</option><option>Espacio comercial</option></select></div>
+      <div><label for="m">Mensaje</label><textarea id="m" placeholder="Ubicación, metros aproximados, plazos..."></textarea></div>
+      <button class="btn" type="submit">Enviar por WhatsApp</button>
+      <a id="walink" target="_blank" rel="noopener" style="font-size:.85rem;color:var(--clay)">Si no se abrió WhatsApp, tocá acá para enviar tu consulta →</a>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 is.ARCH · Estudio Integral · Córdoba, Argentina</span><span>Sitio diseñado por MG Servicios Ejecutivos</span></div></footer>
+
+<a class="wa" href="https://wa.me/5493517914897" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.2.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg></a>
+<div class="lb" id="lb"><button aria-label="Cerrar">×</button><img alt=""></div>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const lb=document.getElementById('lb');
+document.querySelectorAll('.pgrid figure').forEach(f=>f.addEventListener('click',()=>{lb.querySelector('img').src=f.querySelector('img').src;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const v=id=>(document.getElementById(id)||{}).value||'';const t=`Hola is.ARCH! Soy ${v('n')}.\nTipo de proyecto: ${v('t')}\n${v('m')}`;const url='https://wa.me/5493517914897?text='+encodeURIComponent(t);const a=document.getElementById('walink');a.href=url;a.style.display='inline-block';try{window.open(url,'_blank')}catch(err){}});
+</script>
+</body>
+</html>
